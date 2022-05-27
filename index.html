@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Sorting Visulaizer</h1>
+  
+<div class="btn">
+
+    <button class="btn-item" id="array" onclick="reload()">New array</button>
+   
+
+    <button class="btn-item" id="bubble" onclick="Bubble()">Bubble-Sort</button>
+
+
+    <button class="btn-item" id="insertion" onclick="Insertion()">Insertion-Sort</button>
+
+
+    <button class="btn-item" id="merge" onclick="Merge()">Merge-Sort</button>
+
+
+    <button class="btn-item" id="selection" onclick="SelectionSort()">Selection--Sort</button>
+
+
+    <button class="btn-item" id="quick" onclick="Quick()">Quick-Sort</button>
+</div>
+
+<div class="complexities">
+    <div class="timecomplexity">
+    <h3>Time-Complexity</h3>
+    <br>
+    <b><div id="name"></div></b>
+    <br>
+    <div><b>Best-case:</b><span id="best"></span></div>
+    <br>
+    <div><b>Average-case:</b>  <span id="avg"></span></div>
+    <br>
+    <div><b>Worst-case:</b><span id="worst"></span></div>
+    
+</div>
+<div class="bars" id="bars">
+    
+</div>
+
+    <div class="spacecomplexity">
+        <h3>Space-Complexity</h3>
+        <br>
+        <div><b>Worst-case:</b> <span id="spwo"></span></div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+<script src="bubble.js"></script>
+<script src="selection.js"></script>
+<script src="merge.js"></script>
+<script src="quick.js"></script>
+<script src="insertion.js"></script>
+</html>
